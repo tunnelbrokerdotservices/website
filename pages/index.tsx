@@ -168,7 +168,7 @@ export default function Home() {
       <ReactTooltip place='top' effect='solid' />
 
       <main>
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4">
           <div className="flex flex-row justify-between py-4">
             <span className="text-xl font-medium">TunnelBroker.services</span>
             <div className="flex flex-row gap-3">
