@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    @apply dark:bg-[#1A1B1E]
+}

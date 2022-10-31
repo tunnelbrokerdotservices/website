@@ -22,7 +22,9 @@ export default function Home() {
     },
     {
       name: "Tunnelbroker.li",
-      banner: '/assets/providers/tbiFog.png',
+      banner: <div className='w-full bg-white rounded-md mx-auto flex flex-row items-center justify-center h-[60px]'>
+        <img src={'/assets/providers/tbiFog.png'} className="h-[40px]" alt={'Tunnelbroker.li'} />
+      </div>,
       url: 'Tunnelbroker.li',
       pop: 8,
       bgp: true,
@@ -36,7 +38,10 @@ export default function Home() {
     },
     {
       name: "6Project",
-      banner: '/assets/providers/6project.png',
+      // banner: '/assets/providers/6project.png',
+      banner: <div className='w-full bg-[#171086] rounded-md mx-auto flex flex-row items-center justify-center h-[60px]'>
+        <img src={'/assets/providers/6project.png'} className="h-[40px]" alt={'6Project'} />
+      </div>,
       url: '6Project.org',
       pop: 8,
       bgp: true,
@@ -50,7 +55,9 @@ export default function Home() {
     },
     {
       name: "Hurricane Electric TunnelBroker Services",
-      banner: '/assets/providers/henet.png',
+      banner: <div className='w-full bg-white rounded-md mx-auto flex flex-row items-center justify-center h-[60px]'>
+        <img src={'/assets/providers/henet.png'} className="h-[40px]" alt={'Hurricane Electric TunnelBroker Services'} />
+      </div>,
       url: 'TunnelBroker.net',
       pop: 8,
       bgp: <div data-tip="$500 per month on tunnel connections.">
@@ -68,7 +75,9 @@ export default function Home() {
     },
     {
       name: "Karabro",
-      banner: '/assets/providers/karabro.png',
+      banner: <div className='w-full bg-white rounded-md mx-auto flex flex-row items-center justify-center h-[60px]'>
+        <img src={'/assets/providers/karabro.png'} className="h-[40px]" alt={'Karabro'} />
+      </div>,
       url: 'TunnelBroker.se',
       pop: 1,
       bgp: true,
@@ -82,8 +91,11 @@ export default function Home() {
     },
     {
       name: "NetAssist TunnelBroker",
-      banner: '/assets/providers/netassist.png',
-      url: 'tb.NetAssist.se',
+      // banner: '/assets/providers/netassist.png',
+      banner: <div className='w-full bg-[#314C9B] rounded-md mx-auto flex flex-row items-center justify-center h-[60px]'>
+      <img src={'/assets/providers/netassist.png'} className="h-[40px]" alt={'NetAssist TunnelBroker'} />
+    </div>,
+      url: 'tb.NetAssist.ua',
       pop: 1,
       bgp: true,
       prefix: '/48',
@@ -97,6 +109,9 @@ export default function Home() {
     {
       name: "August Internet",
       banner: '/assets/providers/august.png',
+      // banner: <div className='w-full bg-[#000063] rounded-md mx-auto flex flex-row items-center justify-center h-[60px]'>
+      //   <img src={'/assets/providers/august.png'} className="h-[60px]" alt={'August Internet'} />
+      // </div>,
       url: 'August.tw',
       pop: 2,
       bgp: true,
@@ -168,15 +183,15 @@ export default function Home() {
       <ReactTooltip place='top' effect='solid' />
 
       <main>
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 dark:text-white">
           <div className="flex flex-row justify-between py-4">
             <span className="text-xl font-medium">TunnelBroker.services</span>
             <div className="flex flex-row gap-3">
-              <a href="https://discord.gg/s5BdceQHQK" className="text-lg text-gray-600 hover:text-gray-500 transition-all duration-200 ">Discord</a>
-              <a href="https://t.me/route48_org" className="text-lg text-gray-600 hover:text-gray-500 transition-all duration-200">Telegram</a>
+              <a href="https://discord.gg/s5BdceQHQK" className="text-lg dark:text-gray-300 dark:hover:text-gray-400 text-gray-600 hover:text-gray-500 transition-all duration-200 ">Discord</a>
+              <a href="https://t.me/route48_org" className="text-lg dark:text-gray-300 dark:hover:text-gray-400 text-gray-600 hover:text-gray-500 transition-all duration-200">Telegram</a>
             </div>
           </div>
-          <div className="my-4 flex flex-row items-center gap-4 rounded-md border-2 border-black p-5">
+          <div className="my-4 flex flex-row items-center gap-4 rounded-md border-2 border-black dark:border-gray-700 p-5">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-6 w-6 md:block hidden">
               <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
             </svg>
@@ -184,21 +199,24 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-4">
             {brokers.map((broker) => (
-              <div className="flex flex-1 flex-col items-center gap-4 rounded-md border-2 border-gray-300 p-5" key={broker.name}>
-                <div className={`${broker.url == "tb.NetAssist.se" && 'bg-[#E6E6E6]'} h-[60px] px-4 rounded-md`}>
-                  <div className={`m-auto flex items-center justify-center h-[60px]`}>
-                    <a href={`https://${broker.url}`} target="_blank" rel="noreferrer">
-                      {broker.banner ? <img src={broker.banner} className="h-[40px]" alt={broker.name} /> : <span className="text-2xl font-medium">{broker.name}</span>}
-                      <span className="sr-only">{broker.name}</span>
-                    </a>
-                  </div>
+              <div className="flex flex-1 flex-col items-center gap-4 rounded-md border-2 border-gray-300 dark:border-black/50 dark:bg-[#1F2229] p-5" key={broker.name}>
+                {/* <div className={`h-[60px] px-4 rounded-md`}> */}
+                <div className={`m-auto flex items-center justify-center h-[60px] w-full`}>
+                  <a href={`https://${broker.url}`} target="_blank" rel="noreferrer" className='w-full flex flex-row items-center justify-center'>
+                    {broker.banner ?
+                      <>
+                        {typeof broker.banner == 'string' ? <img src={broker.banner} className="h-[40px]" alt={broker.name} /> : broker.banner}
+                      </> : <span className="text-2xl font-medium">{broker.name}</span>}
+                    <span className="sr-only">{broker.name}</span>
+                  </a>
+                  {/* </div> */}
                 </div>
                 <div className="flex w-full flex-col gap-2 py-3">
                   <div className="flex flex-row justify-between">
                     <span className="font-medium">POPs</span>
                     <span>{broker.pop}</span>
                   </div>
-                  <div className="h-0.5 border-gray-200 bg-gray-200"></div>
+                  <div className="h-0.5 border-gray-200 bg-gray-200 dark:border-gray-700 dark:bg-gray-700"></div>
                   <div className="flex flex-row justify-between">
                     <span className="font-medium">BGP</span>
                     {/* check if broker.bgp is a boolean */}
@@ -213,12 +231,12 @@ export default function Home() {
                       <>{broker.bgp}</>
                     }
                   </div>
-                  <div className="h-0.5 border-gray-200 bg-gray-200"></div>
+                  <div className="h-0.5 border-gray-200 bg-gray-200 dark:border-gray-700 dark:bg-gray-700"></div>
                   <div className="flex flex-row justify-between">
                     <span className="font-medium">IPv6 Prefix</span>
                     {broker.prefix}
                   </div>
-                  <div className="h-0.5 border-gray-200 bg-gray-200"></div>
+                  <div className="h-0.5 border-gray-200 bg-gray-200 dark:border-gray-700 dark:bg-gray-700"></div>
                   <div className="flex flex-row justify-between">
                     <span className="font-medium">6in4 / GRE</span>
                     {broker['6in4'] ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-6 w-6 text-green-500">
@@ -227,7 +245,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>}
                   </div>
-                  <div className="h-0.5 border-gray-200 bg-gray-200"></div>
+                  <div className="h-0.5 border-gray-200 bg-gray-200 dark:border-gray-700 dark:bg-gray-700"></div>
                   <div className="flex flex-row justify-between">
                     <span className="font-medium">Wireguard</span>
                     {broker.wireguard ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-6 w-6 text-green-500">
@@ -236,7 +254,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>}
                   </div>
-                  <div className="h-0.5 border-gray-200 bg-gray-200"></div>
+                  <div className="h-0.5 border-gray-200 bg-gray-200 dark:border-gray-700 dark:bg-gray-700"></div>
                   <div className="flex flex-row justify-between">
                     <span className="font-medium">Zerotier</span>
                     {broker.zerotier ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-6 w-6 text-green-500">
@@ -245,7 +263,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>}
                   </div>
-                  <div className="h-0.5 border-gray-200 bg-gray-200"></div>
+                  <div className="h-0.5 border-gray-200 bg-gray-200 dark:border-gray-700 dark:bg-gray-700"></div>
                   <div className="flex flex-row justify-between">
                     <span className="font-medium">OpenVPN</span>
                     {broker.openvpn ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-6 w-6 text-green-500">
@@ -254,7 +272,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>}
                   </div>
-                  <div className="h-0.5 border-gray-200 bg-gray-200"></div>
+                  <div className="h-0.5 border-gray-200 bg-gray-200 dark:border-gray-700 dark:bg-gray-700"></div>
                   <div className="flex flex-row justify-between">
                     <span className="font-medium">rDNS</span>
                     {broker.rdns ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-6 w-6 text-green-500">
