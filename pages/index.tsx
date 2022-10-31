@@ -108,10 +108,10 @@ export default function Home() {
     },
     {
       name: "August Internet",
-      banner: '/assets/providers/august.png',
-      // banner: <div className='w-full bg-[#000063] rounded-md mx-auto flex flex-row items-center justify-center h-[60px]'>
-      //   <img src={'/assets/providers/august.png'} className="h-[60px]" alt={'August Internet'} />
-      // </div>,
+      // banner: '/assets/providers/august.png',
+      banner: <div className='w-full bg-[#000063] rounded-md mx-auto flex flex-row items-center justify-center h-[60px]'>
+        <img src={'/assets/providers/august.png'} className="h-[60px]" alt={'August Internet'} />
+      </div>,
       url: 'August.tw',
       pop: 2,
       bgp: true,
