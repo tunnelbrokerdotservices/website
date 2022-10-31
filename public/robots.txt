@@ -1,0 +1,3 @@
+# https://www.robotstxt.org/robotstxt.html - also go touch grass
+User-agent: *
+Disallow:
