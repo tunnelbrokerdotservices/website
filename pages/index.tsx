@@ -5,21 +5,21 @@ import ReactTooltip from 'react-tooltip';
 
 export default function Home() {
   const brokers = [
-    {
-      name: "Route48",
-      banner: '/assets/providers/route48.png',
-      url: 'Route48.org',
-      pop: 40,
-      bgp: true,
-      // prefix: '/48',
-      prefix: <span data-tip="Default tunnel assignment is /48, Can request up to /44 allocation for BGP Sessions">Up to /44</span>,
-      '6in4': true,
-      wireguard: true,
-      zerotier: true,
-      openvpn: false,
-      rdns: true,
-      buttonStyles: 'bg-blue-600 hover:bg-blue-600/90',
-    },
+    // {
+    //   name: "Route48",
+    //   banner: '/assets/providers/route48.png',
+    //   url: 'Route48.org',
+    //   pop: 40,
+    //   bgp: true,
+    //   // prefix: '/48',
+    //   prefix: <span data-tip="Default tunnel assignment is /48, Can request up to /44 allocation for BGP Sessions">Up to /44</span>,
+    //   '6in4': true,
+    //   wireguard: true,
+    //   zerotier: true,
+    //   openvpn: false,
+    //   rdns: true,
+    //   buttonStyles: 'bg-blue-600 hover:bg-blue-600/90',
+    // },
     {
       name: "Tunnelbroker.li",
       banner: <div className='w-full bg-white rounded-md mx-auto flex flex-row items-center justify-center h-[60px]'>
@@ -106,23 +106,23 @@ export default function Home() {
       rdns: true,
       buttonStyles: 'bg-yellow-500 hover:bg-yellow-500/90',
     },
-    {
-      name: "August Internet",
-      // banner: '/assets/providers/august.png',
-      banner: <div className='w-full bg-[#000063] rounded-md mx-auto flex flex-row items-center justify-center h-[60px]'>
-        <img src={'/assets/providers/august.png'} className="h-[60px]" alt={'August Internet'} />
-      </div>,
-      url: 'August.tw',
-      pop: 2,
-      bgp: true,
-      prefix: '/64, /48',
-      '6in4': true,
-      wireguard: true,
-      zerotier: false,
-      openvpn: false,
-      rdns: true,
-      buttonStyles: 'bg-blue-500 hover:bg-blue-500/90',
-    },
+    // {
+    //   name: "August Internet",
+    //   // banner: '/assets/providers/august.png',
+    //   banner: <div className='w-full bg-[#000063] rounded-md mx-auto flex flex-row items-center justify-center h-[60px]'>
+    //     <img src={'/assets/providers/august.png'} className="h-[60px]" alt={'August Internet'} />
+    //   </div>,
+    //   url: 'August.tw',
+    //   pop: 2,
+    //   bgp: true,
+    //   prefix: '/64, /48',
+    //   '6in4': true,
+    //   wireguard: true,
+    //   zerotier: false,
+    //   openvpn: false,
+    //   rdns: true,
+    //   buttonStyles: 'bg-blue-500 hover:bg-blue-500/90',
+    // },
     {
       name: "IPv6 Only Hosting",
       banner: null,
@@ -187,7 +187,7 @@ export default function Home() {
           <div className="flex flex-row justify-between py-4">
             <span className="text-xl font-medium">TunnelBroker.services</span>
             <div className="flex flex-row gap-3">
-              <a href="https://discord.gg/s5BdceQHQK" className="text-lg dark:text-gray-300 dark:hover:text-gray-400 text-gray-600 hover:text-gray-500 transition-all duration-200 ">Discord</a>
+              <a href="https://discord.gg/ipv6" className="text-lg dark:text-gray-300 dark:hover:text-gray-400 text-gray-600 hover:text-gray-500 transition-all duration-200 ">Discord</a>
               <a href="https://t.me/route48_org" className="text-lg dark:text-gray-300 dark:hover:text-gray-400 text-gray-600 hover:text-gray-500 transition-all duration-200">Telegram</a>
             </div>
           </div>
