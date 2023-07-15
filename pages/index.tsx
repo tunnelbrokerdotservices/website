@@ -21,16 +21,16 @@ export default function Home() {
     //   buttonStyles: 'bg-blue-600 hover:bg-blue-600/90',
     // },
     {
-      name: "Tunnelbroker.li",
+      name: "BGPTunnel.com",
       banner: <div className='w-full bg-white rounded-md mx-auto flex flex-row items-center justify-center h-[60px]'>
-        <img src={'/assets/providers/tbiFog.png'} className="h-[40px]" alt={'Tunnelbroker.li'} />
+        <img src={'/assets/providers/tbiFog.png'} className="h-[40px]" alt={'BGPTunnel.com'} />
       </div>,
-      url: 'Tunnelbroker.li',
-      pop: 8,
+      url: 'BGPTunnel.com',
+      pop: 6,
       bgp: true,
       prefix: '/64',
       '6in4': true,
-      wireguard: false,
+      wireguard: true,
       zerotier: false,
       openvpn: false,
       rdns: true,
