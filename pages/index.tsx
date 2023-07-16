@@ -188,14 +188,14 @@ export default function Home() {
             <span className="text-xl font-medium">TunnelBroker.services</span>
             <div className="flex flex-row gap-3">
               <a href="https://discord.gg/ipv6" className="text-lg dark:text-gray-300 dark:hover:text-gray-400 text-gray-600 hover:text-gray-500 transition-all duration-200 ">Discord</a>
-              <a href="https://t.me/route48_org" className="text-lg dark:text-gray-300 dark:hover:text-gray-400 text-gray-600 hover:text-gray-500 transition-all duration-200">Telegram</a>
+              <a href="https://github.com/tunnelbrokerdotservices/website" className="text-lg dark:text-gray-300 dark:hover:text-gray-400 text-gray-600 hover:text-gray-500 transition-all duration-200">GitHub</a>
             </div>
           </div>
           <div className="my-4 flex flex-row items-center gap-4 rounded-md border-2 border-black dark:border-gray-700 p-5">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-6 w-6 md:block hidden">
               <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
             </svg>
-            <span>{"Due to the removal of Wikipedia's IPv6 Tunnel Broker List on the 13th of August 2022, We have created this page for users to share for those that wish to find IPv6 Tunnel Broker Services."}</span>
+            <span>{"Due to the removal of Wikipedia's IPv6 Tunnel Broker List on the 13th of August 2022, We have created this page for users to share for those that wish to find IPv6 Tunnel Broker Services. If you wish to be added to this list please open an issue at https://github.com/tunnelbrokerdotservices/website"}</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-4">
             {brokers.map((broker) => (
