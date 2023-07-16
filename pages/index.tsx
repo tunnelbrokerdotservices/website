@@ -23,7 +23,7 @@ export default function Home() {
     {
       name: "BGPTunnel.com",
       banner: <div className='w-full bg-white rounded-md mx-auto flex flex-row items-center justify-center h-[60px]'>
-        <img src={'/assets/providers/tbiFog.png'} className="h-[40px]" alt={'BGPTunnel.com'} />
+        <img src={'/assets/providers/bgptunnel.png'} className="h-[40px]" alt={'BGPTunnel.com'} />
       </div>,
       url: 'BGPTunnel.com',
       pop: 6,
