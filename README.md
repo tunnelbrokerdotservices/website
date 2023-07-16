@@ -10,7 +10,7 @@ TunnelBroker.services is a comparison site for reliable services facilitating th
 
 ## How to Use
 
-1. Visit [TunnelBroker.services](https://www.tunnelbroker.services).
+1. Visit [TunnelBroker.services](https://tunnelbroker.services).
 2. Compare service providers based on your criteria, including supported protocols and reverse DNS support.
 3. Read provider profiles to gather information about their offerings, prefix size allocated, reverse DNS support, and other essential details.
 4. Choose your preferred provider and sign up on their website.
