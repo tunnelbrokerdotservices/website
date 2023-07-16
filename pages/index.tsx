@@ -188,7 +188,7 @@ export default function Home() {
             <span className="text-xl font-medium">TunnelBroker.services</span>
             <div className="flex flex-row gap-3">
               <a href="https://discord.gg/ipv6" className="text-lg dark:text-gray-300 dark:hover:text-gray-400 text-gray-600 hover:text-gray-500 transition-all duration-200 ">Discord</a>
-              <a href="https://t.me/route48_org" className="text-lg dark:text-gray-300 dark:hover:text-gray-400 text-gray-600 hover:text-gray-500 transition-all duration-200">Telegram</a>
+              <a href="https://github.com/tunnelbrokerdotservices/website" className="text-lg dark:text-gray-300 dark:hover:text-gray-400 text-gray-600 hover:text-gray-500 transition-all duration-200">GitHub</a>
             </div>
           </div>
           <div className="my-4 flex flex-row items-center gap-4 rounded-md border-2 border-black dark:border-gray-700 p-5">
