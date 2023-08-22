@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+:root {
+    color-scheme: dark;
+}
 html {
-    @apply dark:bg-[#1A1B1E]
+    @apply bg-black;
+    font-family: 'Inter', sans-serif;
 }
