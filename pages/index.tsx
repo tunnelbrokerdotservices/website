@@ -345,7 +345,7 @@ export default function Home() {
           <span className="text-xl font-medium">tunnelbroker.services</span>
           <div className="flex flex-row gap-3">
             <a href="https://discord.gg/ipv6">Discord</a>
-            <a href="https://github.com/tunnelbrokerdotservices/website">Telegram</a>
+            <a href="https://github.com/tunnelbrokerdotservices/website">Github</a>
           </div>
         </div>
         <div className="container mx-auto px-4 text-white">
