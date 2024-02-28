@@ -29,6 +29,22 @@ export default function Home() {
         {
           name: "Norway",
           icon: "https://img.icons8.com/fluency/48/norway-circular.png"
+        },
+        {
+          name: "Kansas City",
+          icon: "https://img.icons8.com/fluency/48/usa-circular.png"
+        },
+        {
+          name: "Toronto",
+          icon: "https://img.icons8.com/fluency/48/canada-circular.png"
+        },
+        {
+          name: "Barcelona",
+          icon: "https://img.icons8.com/fluency/48/spain-circular.png"
+        },
+        {
+          name: "Zurich",
+          icon: "https://img.icons8.com/fluency/48/switzerland-circular.png"
         }
       ],
       bgp: true,
