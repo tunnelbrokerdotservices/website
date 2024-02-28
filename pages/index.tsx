@@ -34,7 +34,7 @@ export default function Home() {
       bgp: true,
       prefix: '/126',
       '6in4': true,
-      wireguard: false,
+      wireguard: true,
       openvpn: false,
       notes: "Only BGP, bring your own subnet/asn.",
       asn: 209533,
